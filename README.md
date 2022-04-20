@@ -1,6 +1,7 @@
 # Killed by netflix
 
-every netflix original show that has been killed/canceled so far 
+**[WIP Demo](https://killedbynetflix.netlify.app/)**  
+Every netflix original show that has been killed/canceled so far.
 
 ## TODO
 
