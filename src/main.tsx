@@ -4,17 +4,25 @@ import shows from '../data.json'
 
 export const Main = component$(() => {
   const killedShows = shows.map((show) => (
-    <li class="list-none font-extralight">
-      <strong class="dark:text-white">{show.title}</strong> | Seasons: {show.seasons} |
-      <span class="bg-netflix text-white p-1 my-2 mx-1">{show.date}</span>
+    <li className=" list-none font-extralight bg-cardBackground text-lightBlue rounded-lg px-5 py-5">
+      <div class="flex">
+        <img
+        src="https://picsum.photos/200/300.jpg"
+        className="max-h-40 m-0 p-0 rounded-md mr-5"
+        />
+        <div>
+          <strong className="text-lightBlue block">{show.title}</strong>Seasons: {show.seasons}
+        </div>
+      </div>
+      <span className="bg-netflix text-white py-1 px-3 mt-5 rounded-md text-center block">{show.date}</span>
     </li>
   ))
 
   return (
-    <Host class="prose dark:text-white m-10 dark:bg-darky">
-      <div class="dark:bg-darky">
-        <h1 class="dark:text-white">
-          Killed by <span class="text-netflix">Netflix</span>
+    <Host className="prose dark:text-white m-10 dark:bg-darky">
+      <div className="dark:bg-darky">
+        <h1 className="dark:text-white">
+          Killed by <span className="text-netflix">Netflix</span>
         </h1>
         {killedShows}
       </div>

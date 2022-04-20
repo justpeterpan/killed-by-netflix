@@ -4,7 +4,9 @@ module.exports = {
     extend: {
       colors: {
         'darky': '#0f1419',
-        'netflix': '#e40914'
+        'netflix': '#e40914',
+        'cardBackground': '#242b39',
+        'lightBlue': '#7685b0',
       },
     },
   },
