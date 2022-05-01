@@ -4,11 +4,12 @@ import shows from '../data.json'
 
 export const Main = component$(() => {
   const killedShows = shows.map((show) => (
-    <li className=" list-none font-extralight bg-cardBackground text-lightBlue rounded-lg px-5 py-5">
-      <div class="flex">
+    <li className=" list-none font-extralight bg-cardBackground text-lightBlue rounded-lg px-5 py-5 my-5">
+      <div className="flex">
         <img
-        src="https://picsum.photos/200/300.jpg"
-        className="max-h-40 m-0 p-0 rounded-md mr-5"
+          src="https://picsum.photos/200/300.jpg"
+          className="max-h-40 m-0 p-0 rounded-md mr-5"
+          alt="movie poster"
         />
         <div>
           <strong className="text-lightBlue block">{show.title}</strong>Seasons: {show.seasons}
